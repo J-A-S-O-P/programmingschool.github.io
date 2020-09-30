@@ -1,7 +1,8 @@
-html {
+
+        html {
             box-sizing: border-box;
             font-family: "ff-meta-serif-web-pro", serif;
-            color: #555;
+            color: #183330;
             font-size: 16px;
         }
 
@@ -138,7 +139,7 @@ html {
         }
 
         /**
- * The fixed Side 
+ * The fixed Side
  */
         .side {
             position: fixed;
@@ -308,7 +309,7 @@ html {
         }
 
         .section.section--intro {
-            background-color: #FFFF7F;
+            background-color: #1dacc2;
             color: #181818;
         }
 
@@ -317,8 +318,8 @@ html {
         }
 
         .section.section--about {
-            background-color: #de5f5f;
-            color: white;
+            background-color: #d9d9d7;
+            color: 183330;
         }
 
         .section.section--about svg {
@@ -326,7 +327,7 @@ html {
         }
 
         .section.section--programs {
-            background-color: #343436;
+            background-color: #9eabae;
             color: white;
         }
 
@@ -335,7 +336,7 @@ html {
         }
 
         .section.section--details {
-            background-color: #5D21D0;
+            background-color: #1dacc2;
             color: white;
         }
 
@@ -359,13 +360,13 @@ html {
             fill: #5bc2ce;
         }
         .section.section--details3 {
-            background-color: #000000;
+            background-color: #db84ad;
             color: white;
         }
 
         .section.section--details3 svg {
 
-            fill: #000000;
+            fill: #db84ad;
         }
 
         .section.section--pepperhill svg {
@@ -444,14 +445,14 @@ html {
 
         h1,
         .h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
 
         @media (min-width: 30rem) {
 
             h1,
             .h1 {
-                font-size: 4.04rem;
+                font-size: 4rem;
                 font-weight: 900;
                 letter-spacing: -10px;
                 line-height: 3.2rem;
@@ -557,11 +558,11 @@ html {
         .accordian {
         display: -webkit-box;
         display: flex;
-        height: 500px;
+        height: 450px;
         width: 115%;
         line-height: 1.75;
         font-size: .75rem;
-        
+
         margin: 2rem .0rem .0rem .0rem;
         }
         .accordian--horizontal .accordian__item {
@@ -588,12 +589,19 @@ html {
         transition: flex-grow .125s ease-in, -webkit-box-flex .125s ease-in;
         transition: flex-grow .125s ease-in;
         overflow: hidden;
-        
+
         }
         .accordian__item.active {
         -webkit-box-flex: 1;
                 flex-grow: 1;
         }
+
+        .user-deselect{
+		  -webkit-user-select: none; /* Safari */
+		  -ms-user-select: none; /* IE 10+ and Edge */
+		  user-select: none; /* Standard syntax */
+		}
+
         .accordian__heading {
         text-transform: uppercase;
         font-size: 0.75rem;
@@ -602,10 +610,14 @@ html {
         line-height: .75;
         padding: .35rem;
         background-color: rgba(255,255,255,0.13);
+        cursor: pointer;
+        }
+        .active .accordian__heading {
+        	cursor: default !important;
         }
         .accordian__body {
         padding: 0.0rem 0.25rem;
-        
+
         }
         table{
         width:100%;
@@ -616,7 +628,7 @@ html {
         }
         .tbl-content{
         height: 455px;
-        overflow-x:auto;
+        overflow-x:scroll;
         margin-top: 0px;
         border: 1px solid rgba(255,255,255,0.3);
         }
@@ -642,11 +654,29 @@ html {
 
         ::-webkit-scrollbar {
             width: 6px;
-        } 
-        ::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-        } 
-        ::-webkit-scrollbar-thumb {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
         }
-        
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+        ::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+
+        .icons_social{
+            position: absolute !important;
+            height: fit-content !important;
+            border-right: 1px dashed rgba(0, 0, 0, 0.3);
+
+        }
+        .ic-sc {
+            height: : 100%;
+            height: -moz-available;
+            height: -webkit-fill-available;
+            height: fill-available;
+            max-height: 44px;
+        }
+        @media only screen and (max-width: 500px) {
+            .ic-sc {
+                max-height: 32px;
+            }
+          }
