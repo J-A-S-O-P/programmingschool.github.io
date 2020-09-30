@@ -558,7 +558,7 @@
         .accordian {
         display: -webkit-box;
         display: flex;
-        height: 450px;
+        height: 470px;
         width: 115%;
         line-height: 1.75;
         font-size: .75rem;
@@ -628,7 +628,7 @@
         }
         .tbl-content{
         height: 455px;
-        overflow-x:scroll;
+        overflow-x: auto;
         margin-top: 0px;
         border: 1px solid rgba(255,255,255,0.3);
         }
