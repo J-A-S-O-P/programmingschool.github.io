@@ -137,9 +137,9 @@
         a {
             text-decoration: none;
         }
-        
+
         /**
- * The fixed Side 
+ * The fixed Side
  */
         .side {
             position: fixed;
@@ -445,14 +445,14 @@
 
         h1,
         .h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
 
         @media (min-width: 30rem) {
 
             h1,
             .h1 {
-                font-size: 4.04rem;
+                font-size: 4rem;
                 font-weight: 900;
                 letter-spacing: -10px;
                 line-height: 3.2rem;
@@ -558,11 +558,11 @@
         .accordian {
         display: -webkit-box;
         display: flex;
-        height: 350px;
+        height: 470px;
         width: 115%;
         line-height: 1.75;
         font-size: .75rem;
-        
+
         margin: 2rem .0rem .0rem .0rem;
         }
         .accordian--horizontal .accordian__item {
@@ -589,19 +589,19 @@
         transition: flex-grow .125s ease-in, -webkit-box-flex .125s ease-in;
         transition: flex-grow .125s ease-in;
         overflow: hidden;
-        
+
         }
         .accordian__item.active {
         -webkit-box-flex: 1;
                 flex-grow: 1;
         }
-       
+
         .user-deselect{
 		  -webkit-user-select: none; /* Safari */
 		  -ms-user-select: none; /* IE 10+ and Edge */
 		  user-select: none; /* Standard syntax */
 		}
-        
+
         .accordian__heading {
         text-transform: uppercase;
         font-size: 0.75rem;
@@ -617,7 +617,7 @@
         }
         .accordian__body {
         padding: 0.0rem 0.25rem;
-        
+
         }
         table{
         width:100%;
@@ -628,7 +628,7 @@
         }
         .tbl-content{
         height: 455px;
-        overflow-x:scroll;
+        overflow-x: auto;
         margin-top: 0px;
         border: 1px solid rgba(255,255,255,0.3);
         }
@@ -654,14 +654,14 @@
 
         ::-webkit-scrollbar {
             width: 6px;
-        } 
-        ::-webkit-scrollbar-track {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-        } 
-        ::-webkit-scrollbar-thumb {
-            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
         }
-        
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+        ::-webkit-scrollbar-thumb {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        }
+
         .icons_social{
             position: absolute !important;
             height: fit-content !important;
@@ -670,7 +670,7 @@
         }
         .ic-sc {
             height: : 100%;
-            height: -moz-available;   
+            height: -moz-available;
             height: -webkit-fill-available;
             height: fill-available;
             max-height: 44px;
